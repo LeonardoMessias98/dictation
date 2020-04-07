@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/index.css">
+  <title>Ditongo</title>
+</head>
+
+<body>
+  <header>
+    <img src="/imagens/logo.png">
+    <img id="name" src="/imagens/logo-name.png">
+  </header>
+
+  <div class="center">
+    <section class="section-objects">
+      <section id="left-section">
+        <a class="btn btn-green" onclick="aparecerNiveisEasy()">
+          <i></i>
+          <span>EASY</span>
+        </a>
+
+        <a class="btn btn-orange" onclick="aparecerNiveisMedium()">
+          <i></i>
+          <span>MEDIUM</span>
+        </a>
+
+        <a class="btn btn-red" onclick="aparecerNiveisHard()">
+          <i></i>
+          <span>HARD</span>
+        </a>
+      </section>
+
+      <section id="mid-section">
+        
+        <div class="easy invisible">
+          <a class="btn btnStyle-blue" onclick="easy1()">
+              <i></i>
+              <span>Easy 1</span>
+          </a>
+          <a class="btn btnStyle-blue" onclick="easy2()">
+              <i></i>
+              <span>Easy 2</span>
+          </a>
+          <a class="btn btnStyle-blue" onclick="easy3()">
+              <i></i>
+              <span>Easy 3</span>
+          </a>
+          <a class="btn btnStyle-blue" onclick="easy4()">
+              <i></i>
+              <span>Easy 4</span>
+          </a>
+          <a class="btn btnStyle-blue" onclick="easy5()">
+              <i></i>
+              <span>Easy 5</span>
+          </a>
+          <a class="btn btnStyle-blue" onclick="easy6()">
+              <i></i>
+              <span>Easy 6</span>
+          </a>
+        </div>
+
+        <div class="medium invisible">
+          <a class="btn btn-orange" onclick="medium1()">
+              <i></i>
+              <span>Medium 1</span>
+          </a>
+          <a class="btn btn-orange" onclick="medium2()">
+              <i></i>
+              <span>Medium 2</span>
+          </a>
+          <a class="btn btn-orange" onclick="medium3()">
+              <i></i>
+              <span>Medium 3</span>
+          </a>
+          <a class="btn btn-orange" onclick="medium4()">
+              <i></i>
+              <span>Medium 4</span>
+          </a>
+          <a class="btn btn-orange" onclick="medium5()">
+              <i></i>
+              <span>Medium 5</span>
+          </a>
+          <a class="btn btn-orange" onclick="medium6()">
+              <i></i>
+              <span>Medium 6</span>
+          </a>
+        </div>
+
+        <div class="hard invisible">
+          <a class="btn btn-red" onclick="hard1()">
+              <i></i>
+              <span>Hard 1</span>
+          </a>
+          <a class="btn btn-red" onclick="hard2()">
+              <i></i>
+              <span>Hard 2</span>
+          </a>
+          <a class="btn btn-red" onclick="hard3()">
+              <i></i>
+              <span>Hard 3</span>
+          </a>
+          <a class="btn btn-red" onclick="hard4()">
+              <i></i>
+              <span>Hard 4</span>
+          </a>
+          <a class="btn btn-red" onclick="hard5()">
+              <i></i>
+              <span>Hard 5</span>
+          </a>
+          <a class="btn btn-red" onclick="hard6()">
+              <i></i>
+              <span>Hard 6</span>
+          </a>
+        </div>
+
+        <!--Se der depois colocamos a porcentagem que foi feita
+        <label class="mid-label">100%</label>
+        <label class="mid-label">44%</label>
+        <label class="mid-label">0%</label>
+        -->
+      </section>
+      
+      <section id="right-section">   
+
+        <div class="divLer">
+          <textarea id="text_to_listen" class="right-textarea" placeholder="Escreva para ouvir"></textarea>
+          <a id="btnStyle" class="btnStyle1 btnStyle1-blue" onclick="ler()">
+            <i></i>
+            <span>Ler</span>
+          </a>
+        </div>
+
+        <div class="divCheck invisible">
+          <textarea id="text_user" class="right-textarea" placeholder="Escreva o que ouviu"></textarea>
+          <a id="btnCorrecao" class="btnStyle btnStyle-blue" onclick="correcao()">
+            <i></i>
+            <span>Correção</span>
+            <a id="btnReler" class="btnStyle btnStyle-blue" onclick="play()">
+              <i></i>
+              <span>Reler</span>
+            </a>
+          </a>
+        </div>
+        <div class="divCorrecao invisible">
+          <textarea id="check-box" class="right-textarea" readonly></textarea>
+          <a id="btnReFazer" class="btnStyle btnStyle-blue" onclick="refazer()">
+            <i></i>
+            <span>Refazer</span>
+          </a>
+        </div>      
+      </section>      
+    </section>
+  </div>
+
+  <footer>
+    <section id="devs">
+      <a href="https://github.com/EvandroRBR" id="namedev" target="blank">Evandro Braga</a>
+      <a href="https://github.com/LeonardoMessias98" id="namedev1" target="blank">Leonardo Messias</a>
+      <a href="https://github.com/PedroMendoncaBR" id="namedev2" target="blank">Pedro Mendonça</a>
+    </section>
+
+    <section id="devuser">
+      <img id="name1" src="/imagens/fotterDEVS.png">
+      <img id="name1" src="/imagens/fotterDEVS.png">
+      <img id="name1" src="/imagens/fotterDEVS.png">
+    </section>
+  </footer>
+
+  <script src="../js/index.js"></script>
+
+</body>
+</html>
